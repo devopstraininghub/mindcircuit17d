@@ -1,0 +1,38 @@
+Ansible 
+------------------------
+first we will instal one master and 2 workeer nodes
+belwo will be same for node 1 as well
+
+sudo su -
+
+[root@node2 ~]# ls -la
+total 24
+dr-xr-x---.  3 root root 124 Jul  5 11:55 .
+dr-xr-xr-x. 18 root root 237 Jun 26 19:16 ..
+-rw-------.  1 root root  19 Jul  5 11:55 .bash_history
+-rw-r--r--.  1 root root  18 Feb  2  2023 .bash_logout
+-rw-r--r--.  1 root root 141 Feb  2  2023 .bash_profile
+-rw-r--r--.  1 root root 429 Feb  2  2023 .bashrc
+-rw-r--r--.  1 root root 100 Feb  2  2023 .cshrc
+drwx------.  2 root root  29 Jul  5 11:11 .ssh
+-rw-r--r--.  1 root root 129 Feb  2  2023 .tcshrc
+
+[[root@node2 .ssh]# ll
+total 4
+-rw-------. 1 root root 559 Jul  5 11:11 authorized_keys
+[root@node2 .ssh]# cat authorized_keys
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please l       
+ogin as the user \"ec2-user\" rather than the user \"root\".';echo;sleep 10;exit 
+142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCW65x35LX062uhhffKgyKeHKrkwA8HaK8pzB  
+qg4lAeZ92otcTcGCHQulrF3hzty91zPD7/CqL0pPBFKciZ+17nYxMGrpGJmA8TwK5Mw3hbY6IxQN6u2W 
+47MontkT/wJjAqUEj0ZKdeC+i7zKcXY3Kekrx16YE0hLDaz2a/Tysh5KmgBWdIii+9zXw9X5DxtUJtiB 
+BYq3VM9dmRJsmv5Uxrw3geAyCJnPrcGHjV57hBUsgBHEAvpsFDbE3kbR/viBiyey7ATM/vpetlxE2FzE 
+ty5bycDIlhsjZRU6o3W5jqgdThO5yWu0RxOcQE6aY36inBON8CCQqWFl6niGhag3m5 Ansible_17d
+
+we will copy master public key as well in authorized_keys file
+
+
+
+
+
+
