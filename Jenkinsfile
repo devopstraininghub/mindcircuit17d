@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 	
-        stage('checkout') {
+        stage('checkout-clone') {
             steps {
                 echo 'git checkout stage'
 				git branch: 'main', url: 'https://github.com/devopstraininghub/mindcircuit17d.git'
